@@ -1,0 +1,39 @@
+@import url("../../style/variable.css");
+
+.carddiv{
+    width: 100vh;
+}
+.card-specialist {
+    box-shadow: var(--shadow) 1px 1px 5px 1px;
+    width: 40vh !important;
+}
+.card-specialist:hover{
+    transition: all ease 0.2s;
+    box-shadow: var(--shadow) 1px 1px 10px 5px;
+    background-color: var(--color3);
+}
+.card-specialist:hover img{
+    background-color: #fff;
+}
+.card-div h4{
+    font-size: 1.2rem;
+}
+.card-div p{
+    font-size: .8rem;
+}
+.card-div-img img{
+    border-radius: 10rem;
+    background-color: var(--color3);
+    border: var(--shadow) 3px solid;
+}
+
+@media (max-width: 1024px) {
+    .card-specialist{
+        width: 50vh !important;
+    }
+}
+@media (max-width: 768px) {
+    .card-specialist{
+        width: 100vh !important;
+    }
+}
