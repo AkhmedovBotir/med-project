@@ -4,3 +4,6 @@ export { default as HeroSearch } from "./HeroSearch/HeroSearch";
 export { default as Card } from "./Card/Card";
 export { default as CardSpecialist } from "./CardSpecialist/CardSpecialist";
 export { default as HomeServices } from "./HomeServices/HomeServices";
+export { default as HeroCompetition } from "./HeroCompetition/HeroCompetition";
+export { default as HeroTop } from "./HeroTop/HeroTop";
+export { default as FAQ } from "./FAQ/FAQ";

@@ -1,5 +1,5 @@
 import React from 'react'
-import { Card, CardSpecialist, Hero, HeroSearch, HomeServices, Navbar } from '../components'
+import { Card, CardSpecialist, FAQ, Hero, HeroCompetition, HeroSearch, HeroTop, HomeServices, Navbar } from '../components'
 
 export default function Home() {
   return (
@@ -10,6 +10,9 @@ export default function Home() {
         <Card />
         <CardSpecialist />
         <HomeServices />
+        <HeroCompetition />
+        <HeroTop />
+        <FAQ />
     </div>
   )
 }
