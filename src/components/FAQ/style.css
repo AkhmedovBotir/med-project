@@ -1,0 +1,12 @@
+.collapsed {
+  color: var(--color4) !important;
+  box-shadow: var(--color3) 0px 0px 0px 0px !important;
+  background-color: var(--color3) !important;
+}
+.accordion-button {
+  color: #fff;
+  font-weight: 700;
+  font-size: 1.2rem;
+  background: var(--color1) !important;
+  box-shadow: var(--color2) 1px 1px 10px 1px !important;
+}

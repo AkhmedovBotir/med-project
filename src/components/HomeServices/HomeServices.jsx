@@ -21,7 +21,7 @@ export default function HomeServices() {
       <h3 className="text-center">Onlayn maslahat xizmati haqida</h3>
       <br />
       <Row xs={1} md={2}>
-        <Col className="p-3">
+        <Col className="p-3 cl-w">
           <Swiper
             spaceBetween={30}
             centeredSlides={true}
@@ -43,7 +43,7 @@ export default function HomeServices() {
             </SwiperSlide>
           </Swiper>
         </Col>
-        <Col className="d-flex flex-column justify-content-center">
+        <Col className="d-flex flex-column justify-content-center cw-l">
           <Typography variant="h6" className="fw-bold">
             Onlayn maslahat xizmatidan foydalanish usullari:
           </Typography>

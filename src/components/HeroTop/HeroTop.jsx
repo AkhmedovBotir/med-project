@@ -4,12 +4,12 @@ import { Col, Container, Row } from "react-bootstrap";
 
 export default function HeroTop() {
   return (
-    <div className="bg-pill py-5">
+    <div className="bg-pill py-2">
       <Container>
         <Row>
           <Col className="d-flex align-items-center">
             <iframe
-              className="rounded-3"
+              className="rounded-3 my-5"
               frameborder="0"
               allowfullscreen=""
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"

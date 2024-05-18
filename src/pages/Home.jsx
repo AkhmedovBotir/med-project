@@ -1,18 +1,19 @@
 import React from 'react'
-import { Card, CardSpecialist, FAQ, Hero, HeroCompetition, HeroSearch, HeroTop, HomeServices, Navbar } from '../components'
+import { Card, CardSpecialist, FAQ, Footer, Hero, HeroCompetition, HeroSearch, HeroTop, HomeProf, HomeServices, Navbar } from '../components'
 
 export default function Home() {
   return (
     <div>
         <Navbar />
         <Hero />
+        <HomeProf />
         <HeroSearch />
-        <Card />
         <CardSpecialist />
         <HomeServices />
         <HeroCompetition />
         <HeroTop />
         <FAQ />
+        <Footer />
     </div>
   )
 }

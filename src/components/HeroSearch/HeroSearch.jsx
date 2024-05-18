@@ -49,15 +49,15 @@ export default function HeroSearch() {
   return (
     <div className="hero-search p-5">
       <Container>
-        <h1 className="text-bold text-center p-2">SHIFOKOR QIDIRISH</h1>
-        <div className="d-flex justify-content-around">
+        <h3 className="text-bold text-center p-2">Shifokor qidirish</h3>
+        <div className="d-flex justify-content-around hero-inp">
           <input
             fullWidth
             type="text"
             placeholder="Shifokor ismi"
-            class="form-control hero-search-input"
+            class="form-control hero-search-input my-3"
           />
-          <FormControl className="hero-search-input">
+          <FormControl className="hero-search-input my-3">
             <InputLabel id="demo-simple-select-label bg-light">
               Barcha mutaxassislar
             </InputLabel>
@@ -74,7 +74,7 @@ export default function HeroSearch() {
               })}
             </Select>
           </FormControl>
-          <button className="btn btn-login">Shifokorlarni qidirish</button>
+          <button className="btn btn-login my-3">Shifokorlarni qidirish</button>
         </div>
       </Container>
     </div>

@@ -1,96 +1,302 @@
-@import url('./variable.css');
+@import url("./variable.css");
 
-.navbar{
-    width: 100%;
-    position: fixed;
-    z-index: 9999999999999999;
-    top: 0;
-    left: 0;
-    background-color: var(--color3) !important;
-    box-shadow: var(--shadow) 1px 1px 5px 1px;
+.navbar {
+  width: 100%;
+  position: fixed;
+  z-index: 9999999999999999;
+  top: 0;
+  left: 0;
+  background-color: var(--color3) !important;
+  /* box-shadow: var(--shadow) 1px 1px 5px 1px; */
 }
-.active{
-    color: var(--color1);
+.brand-logo {
+  width: 8rem;
 }
-.nav-text{
-    color: var(--color4);
-    font-weight: 600;
+.offcanvas {
+  background-color: var(--color3) !important;
 }
-.btn-login{
-    border: var(--color1) solid 1px;
-    color: var(--color1);
+.active {
+  color: var(--color1);
 }
-
-.btn-login:hover{
-    background: var(--color1);
-    color: var(--color3);
+.nav-text {
+  color: var(--color4);
+  font-weight: 600;
 }
-
-.btn-register{
-    background: var(--color1);
-    color: var(--color3);
+.btn-login {
+  border: var(--color1) solid 1px;
+  color: var(--color1);
 }
 
-.btn-register:hover{
-    border: var(--color1) solid 1px;
-    color: var(--color1);
+.btn-login:hover {
+  background: var(--color1);
+  color: var(--color3);
 }
 
-.hero{
-    width: 100%;
-    height: 80vh;
-    background-image: url("../img/img.png");
-    background-position: left;
-    background-size: cover;
-    background-attachment: fixed;
+.btn-register {
+  background: var(--color1);
+  color: var(--color3);
 }
-.hero-search{
-    background-color: var(--shadow);
+
+.btn-register:hover {
+  border: var(--color1) solid 1px;
+  color: var(--color1);
 }
-.hero-search-input{
-    width: 50vh;
-    background-color: #fff;
+
+.hero {
+  width: 100%;
+  height: 80vh;
+  background-image: url("../img/img.png");
+  background-position: left;
+  background-size: cover;
+  background-attachment: fixed;
 }
-.button-class-group{
-    background-color: var(--color1);
-    width: 50vh;
-    display: flex;
-    justify-content: space-between;
+.hero-search {
+  background-color: var(--shadow);
+}
+.hero-search-input {
+  width: 50vh;
+  background-color: #fff;
+}
+.button-class-group {
+  background-color: var(--color1);
+  width: 50vh;
+  display: flex;
+  justify-content: space-between;
 }
 .class-button1,
 .class-button2,
-.class-button3{
-    font-size: 1.2rem;
-    width: 33%;
-    color: var(--color4);
-    font-weight: bold;
-    background: transparent;
-    border: var(--color1) 0 solid;
+.class-button3 {
+  font-size: 1.2rem;
+  width: 33%;
+  color: var(--color4);
+  font-weight: bold;
+  background: transparent;
+  border: var(--color1) 0 solid;
 }
-.active-gr{
-    background-color: var(--color3);
+.active-gr {
+  background-color: var(--color3);
 }
-.badge-bg{
-    background-color: var(--color4) !important;
-    font-size: .9rem;
+.badge-bg {
+  background-color: var(--color4) !important;
+  font-size: 0.9rem;
 }
-.my-swiper-col{
-    height: 50vh !important;
+.my-swiper-col {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  height: 70vh !important;
 }
-.my-swiper-col img{
-    width: 70%;
-    height: 70%;
+.my-swiper-col img {
+  width: 80%;
+  height: 80%;
 }
-.competition-ul li::marker{
-    color: var(--color4);
+.competition-ul li::marker {
+  color: var(--color4);
 }
-.textleft{
-    text-align: left !important;
+.textleft {
+  font-size: 0.8rem !important;
+  text-align: left !important;
 }
-.img-avatar{
-    width: 6rem !important;
-    height: 6rem !important;
+.img-avatar {
+  width: 6rem !important;
+  height: 6rem !important;
 }
-.bg-pill{
-    background-color: var(--color2);
+.bg-pill {
+  background-color: var(--color2);
+}
+.homeprof-icon {
+  color: var(--color1);
+}
+.homeprof-icon > svg {
+  font-size: 3rem;
+}
+.homeprof-text {
+  color: var(--color4);
+}
+.homeprof-text > h5 {
+  font-size: 1rem;
+}
+#gradient {
+  /* height: 50vh; */
+  /* background: linear-gradient(-45deg, #ee7752, #db5085, #23a6d5, #23d5ab); */
+  background: linear-gradient(50deg, #ffda77, #f5be12, #f4f4f4);
+  background-size: 400% 400%;
+  animation: gradient 10s ease infinite;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+.footer-row {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.footer-col-right,
+.footer-col-center,
+.footer-col-left {
+  width: 35%;
+  background: rgba(255, 255, 255, 0.178);
+  backdrop-filter: blur(5px);
+  box-shadow: 0 0 25px 10px rgba(0, 0, 0, 0.137);
+  border: 1px solid rgba(255, 255, 255, 0.185);
+  border-radius: 20px;
+}
+.footer-col-left img {
+  width: 20vh;
+}
+.footer-col-center {
+  width: 25%;
+}
+.footer-col-center a {
+  text-decoration: none;
+  color: var(--color4);
+}
+.footer-col-center a:hover {
+  opacity: 0.5;
+}
+.footer-col-lefts {
+  font-size: 0.7rem;
+  width: 100%;
+}
+.footer-moljal {
+  width: 60%;
+}
+.footer-col-lefts > h6 > span {
+  font-size: 0.8rem;
+}
+.footer-col-col > a > img {
+  width: 20vh;
+}
+.footer-col-col1 a {
+  text-decoration: none;
+  background-color: var(--color4);
+  color: var(--color2) !important;
+}
+.footer-text {
+  font-size: 0.8rem;
+}
+.footer-copy {
+  font-size: 0.9rem;
+  color: var(--color4);
+}
+
+@media (max-width: 1200px) {
+  .hero {
+    background-size: 100rem !important;
+  }
+  .hero > .container > .w-50 {
+    width: 80% !important;
+  }
+}
+@media (max-width: 992px) {
+  .hero{
+    background-size: 80rem !important;
+  }
+  .hero-search-input{
+    width: 30%;
+    font-size: .9rem !important;
+  }
+  .btn-login,
+  .hero-search-input > label{
+    font-size: .9rem !important;
+  }
+  .footer-col-left,
+  .footer-col-center,
+  .footer-col-right{
+    width: 100% !important;
+  }
+  .cl-w{
+    display: none;
+  }
+  .cw-l{
+    width: 100%;
+  }
+}
+@media (max-width: 768px){
+  .hero{
+    height: 80vh !important;
+  }
+  .hero > .container > .w-50{
+    width: 100% !important;
+  }
+  .brand-logo{
+    width: 20vh !important;
+  }
+  .hero-inp{
+    display: flex;
+    flex-direction: column;
+  }
+  .hero-search-input{
+    /* margin: 1rem 0 !important; */
+    /* padding: 15px 10px !important; */
+    width: 100%;
+  }
+  .bg-pill > .container > .row > .col > h6{
+    font-size: 1.2rem !important;
+  }
+  .bg-pill > .container > .row > .col > .my-3 > ul > li{
+    font-size: 1rem !important;
+  }
+  .faq > .accordion > .accordion-item > .accordion-header > .accordion-button{
+    font-size: 1rem !important;
+  }
+  .faq > .accordion > .accordion-item > .accordion-collapse > .accordion-body > p {
+    font-size: 0.8rem !important;
+  }
+  .footer-col-center > .fw-bold > a{
+    font-size: .8rem !important;
+  }
+  .footer-col-col1 {
+    padding: 0 1rem !important;
+  }
+  .footer-col-col1 > a > svg{
+    font-size: 1rem !important;
+  }
+}
+@media (max-width: 425px) {
+  .hero {
+    height: 70vh !important;
+  }
+  .hero > .container > .w-50 > h3{
+    font-size: 1.3rem !important;
+  }
+  .hero > .container > .w-50 > h4{
+    font-size: 1rem !important;
+  }
+  .hero > .container > .w-50 > p{
+    font-size: 0.8rem !important;
+  }
+  .download {
+    width: 100% !important;
+    flex-wrap: wrap;
+    display: flex;
+  }
+  .appstore > img{
+    width: 100px !important;
+  }
+  .download > a > button,
+  .download > a > button > svg
+  {
+    display: none !important;
+    font-size: 1rem !important;
+  }
+  .brand-logo{
+    width: 15vh !important;
+  }
+  .footer-copy{
+    font-size: 0.8rem !important;
+  }
+  .footer-col-col > a > img{
+    width: 15vh !important;
+  }
 }
